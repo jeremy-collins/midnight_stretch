@@ -1,6 +1,8 @@
 # Midnight Stretch
 Midnight Stretch is a semi-autonomous robotic caregiving system capable of detecting falls among the elderly. The system has been implemented on the Stretch RE1 Mobile Manipulator from Hello Robot.
 
+See our video <a href="https://www.youtube.com/watch?v=yqKOwHO42N4" target="_blank">here.</a>
+
 The system consists of 8 python scripts with the following functions:
 - **fall_detection_node.py:** ROS node which detects a fall by tracking the position and trajectory of keypoints in the upper body using a pretrained deep neural network (OpenCV Open Model Zoo). This node also commands the robot's camera to move and keep a moving person in frame.
 - **midnight_guardian.py:** ROS node which initializes the states of each topic and keeps track of the system state for debugging purposes.
